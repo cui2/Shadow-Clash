@@ -273,10 +273,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targets: []
-  padding: 4
+  padding: 3
   desiredBottomY: -5
   minSize: 5
-  smoothTime: 0.25
+  smoothTime: 0.2
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,7 +428,7 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: 0}
-  m_PlayerPrefab: {fileID: 3023846904152017405, guid: 6d63497fab0c5d54e8e939638401b8fa, type: 3}
+  m_PlayerPrefab: {fileID: 648171399361955437, guid: c56e95b9fd3d1204e96a3dd657c4059e, type: 3}
   m_SplitScreen: 0
   m_MaintainAspectRatioInSplitScreen: 1
   m_FixedNumberOfSplitScreens: -1
@@ -465,7 +465,7 @@ GameObject:
   - component: {fileID: 1536952192}
   - component: {fileID: 1536952191}
   - component: {fileID: 1536952190}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Floor
   m_TagString: Ground
   m_Icon: {fileID: 0}

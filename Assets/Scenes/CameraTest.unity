@@ -315,10 +315,10 @@ MonoBehaviour:
   targets:
   - {fileID: 2080443426}
   - {fileID: 1623823569}
-  padding: 4
+  padding: 3
   desiredBottomY: -5
   minSize: 5
-  smoothTime: 0.25
+  smoothTime: 0.2
 --- !u!114 &1936214518
 MonoBehaviour:
   m_ObjectHideFlags: 0

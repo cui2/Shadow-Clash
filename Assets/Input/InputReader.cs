@@ -13,7 +13,6 @@ public class InputReader : MonoBehaviour
 
     private GameInputs controls;
     private PlayerInput playerInput;
-    private bool isGrounded;
 
     private void Awake()
     {

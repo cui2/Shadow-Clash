@@ -45,17 +45,8 @@ public class DynamicCamera : MonoBehaviour
         Camera.main.transform.position = Vector3.SmoothDamp(Camera.main.transform.position, targetPosition, ref velocity, smoothTime);
     }
 
-    // Public methods to add/remove targets
-    public void AddTarget(Transform target)
-    {
-        targets.Add(target);
-    }
-    public void RemoveTarget(Transform target)
-    {
-        targets.Remove(target);
-    }
-    public void ClearTargets()
-    {
-        targets.Clear();
-    }
+    // Public methods for target management
+    public void AddTarget(Transform target) => targets.Add(target);
+    public void RemoveTarget(Transform target) => targets.Remove(target);
+    public void ClearTargets() => targets.Clear();
 }

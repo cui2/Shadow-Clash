@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(InputReader))]
-public class PlayerController : MonoBehaviour
+public class PlayerControllerTest : MonoBehaviour
 {
     private Rigidbody2D rb;
     private InputReader inputReader;
