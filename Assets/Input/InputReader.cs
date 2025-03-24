@@ -1,10 +1,10 @@
-// InputReader.cs (updated)
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System;
 
 public class InputReader : MonoBehaviour
 {
+    public event Action<Vector2> OnMoveStarted;
     public event Action<Vector2> OnMove;
     public event Action OnJump;
     public event Action OnPunch;
@@ -28,6 +28,7 @@ public class InputReader : MonoBehaviour
     private void OnEnable()
     {
         controls.Enable();
+        controls.Player.Move.started += ctx => OnMoveStarted?.Invoke(ctx.ReadValue<Vector2>());
         controls.Player.Move.performed += ctx => OnMove?.Invoke(ctx.ReadValue<Vector2>());
         controls.Player.Move.canceled += ctx => OnMove?.Invoke(Vector2.zero);
         controls.Player.Jump.performed += ctx => OnJump?.Invoke();
